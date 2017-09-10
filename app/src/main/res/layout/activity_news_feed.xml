@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nath4.medhacks2017.NewsFeed">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check out how this diet pill made him lose 50 lbs in two months"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout"
+            android:text="Posted 2 hrs ago by CVS" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginBottom="30dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/news1" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CVS Pharmacy introduces health-and-wellness vending machines"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout"
+            android:text="Posted on 9/7/17 by CVS" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/cvsVendingMachine" />
+
+    </LinearLayout>
+
+</RelativeLayout>
