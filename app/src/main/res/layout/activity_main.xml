@@ -39,6 +39,32 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/leftBtn"
+            android:onClick="onLeftBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="120dp"
+            android:layout_weight="1"
+            android:text="Left" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Right" />
+    </LinearLayout>
+    
     <VideoView
         android:id="@+id/videoview"
         android:layout_width="300dp"
