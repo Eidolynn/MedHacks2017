@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "320264964311",
+    "firebase_url": "https://medhacks2017-57884.firebaseio.com",
+    "project_id": "medhacks2017-57884",
+    "storage_bucket": "medhacks2017-57884.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320264964311:android:fabf94b69bcf28bb",
+        "android_client_info": {
+          "package_name": "com.example.nath4.medhacks2017"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320264964311-ihr30502puudvv90jl3m9l5kug3rp1dm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nath4.medhacks2017",
+            "certificate_hash": "0fd1bf621c00f27c99e5a799fcd117eadafe8df3"
+          }
+        },
+        {
+          "client_id": "320264964311-45fo1is8n56k2efrtigop4vuh9lesbaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHoHbAetK5_SceYzQsn8ZIxCD56FXRsoI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320264964311-45fo1is8n56k2efrtigop4vuh9lesbaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
