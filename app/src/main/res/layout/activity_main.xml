@@ -47,18 +47,7 @@
         tools:layout_editor_absoluteX="42dp"
         android:layout_marginBottom="25dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/linearLayout"
-        android:layout_alignStart="@+id/linearLayout"
-        android:layout_below="@+id/linearLayout"
-        android:layout_marginLeft="33dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="41dp"
-        android:text="Button" />
+        android:layout_alignStart="@+id/linearLayout" />
 
 </RelativeLayout>
