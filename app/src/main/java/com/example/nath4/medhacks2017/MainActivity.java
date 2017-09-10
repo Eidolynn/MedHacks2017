@@ -9,17 +9,13 @@ import android.net.Uri; //Required to use URIs
 import android.widget.VideoView; //Required for VideoView
 
 public class MainActivity extends AppCompatActivity {
+     Uri videoUri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }//end onCreate
-
-    public void onRecordInit(View view) {
-        //create intent access camera
-        dispatchTakeVideoIntent();
-    }//end onRecordInit
 
     //BEGIN CODE TO INITIALIZE INTENT TO CAMERA ON HARDWARE(PHONE)
     static final int REQUEST_VIDEO_CAPTURE = 1;
@@ -38,10 +34,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
         if (requestCode == REQUEST_VIDEO_CAPTURE && resultCode == RESULT_OK) {
             VideoView mVideoView = (VideoView) findViewById(R.id.videoview);
-            Uri videoUri = intent.getData();
+            videoUri = intent.getData();
             mVideoView.setVideoURI(videoUri);
+            WatchVid vid = new WatchVid();
+            vid.setVideoUri(videoUri);
             RECORD_FIRST = true;
         }
+        if(RECORD_FIRST) {
+            // Create a new intent to open the {@link FamilyActivity}
+            Intent contactsIntent = new Intent(MainActivity.this, Contacts.class);
+
+            // Start the new activity
+            startActivity(contactsIntent);
+        }
+
     }
     //END CODE TO VIEW VIDEO
 
@@ -55,15 +61,29 @@ public class MainActivity extends AppCompatActivity {
     }
     //END CODE TO PLAY VIDEO
 
-    //BEGIN CODE TO PAUSE VIDEO
-    protected void onPauseInit(View view) {
+    //BEGIN onContactClick Go Left
+    protected void onContactClick(View view){
 
-        VideoView mVideoView = (VideoView) findViewById(R.id.videoview);
-        if(mVideoView.isPlaying()) {
-            mVideoView.pause();
-        }
+        // Create a new intent to open the {@link FamilyActivity}
+        Intent recieveIntent = new Intent(MainActivity.this, Recieve.class);
+
+        // Start the new activity
+        startActivity(recieveIntent);
+
+    }//END onContactClick
+
+    //BEGIN onCamClick
+    protected void onCamClick(View view) {
+
+        //Start taking photo and get the URI
+        dispatchTakeVideoIntent();
+
+    }//END onCamClick
+
+    protected void onStartVid(View view){
+        Intent watchVidIntent = new Intent(MainActivity.this, WatchVid.class);
+
+        startActivity(watchVidIntent);
     }
-    //END CODE TO PAUSE VIDEO
-
 
 }//End Main Function
