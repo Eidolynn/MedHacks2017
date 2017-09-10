@@ -1,0 +1,1 @@
+Pictures for NewsFeed feature
